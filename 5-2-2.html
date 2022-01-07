@@ -1,0 +1,11 @@
+<script>
+  function callthreetimes(callback) {
+    for (let i = 0; i < 3; i++) {
+      callback(i);
+    }
+  }
+
+  callthreetimes(function (i) {
+    console.log(`${i} 번째 호출입니다.`);
+  });
+</script>
