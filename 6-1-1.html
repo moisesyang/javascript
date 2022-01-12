@@ -1,26 +1,18 @@
 <script>
-  // 객체(object) 속성값 불러올 경우 일반
-  const object0 = {
-    가격: 500,
-    사이즈: 100,
-    우선순위: "중간",
+  const pet = {
+    name: "바둑이",
+    eat: function (food) {
+      alert(this.name + "는 " + food + "를 먹습니다.");
+    },
   };
 
-  console.log(object0.가격);
-  console.log(object0.사이즈);
-  console.log(object0["우선순위"]);
+  const pet1 = {
+    name: "쿠키",
+    health: function (medican) {
+      alert(this.name + "는" + medican + "한 건강상태 입니다.");
+    },
+  };
 
-  //접근법
-  // 속성값이 숫자일 경우 -> object0.가격;
-  // 속성값이 숫자일 경우 -> object0.사이즈;
-  // 속성값이 문자일 경우 -> object0["우선순위"];
-
-  // 객체(object) 키값이 문자열일 경우 속성값을 불러올 때는 [] 로 호출
-  // const object1 = {
-  //   "with space": 5,
-  //   "with price": 50,
-  // };
-
-  // console.log(object1["with space"]);
-  // console.log(object1["with price"]);
+  pet.eat("시리얼");
+  pet1.health("양호");
 </script>
