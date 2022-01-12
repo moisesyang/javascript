@@ -1,0 +1,14 @@
+<script>
+  //변수 선언
+  // filter : true 만 리턴
+  let numbers = [275, 25, 75, 52, 103, 32, 57, 24, 76];
+
+  // 홀수 추출
+  numbers = numbers.filter((x) => x % 2 === 1);
+  // 100이하 추출
+  numbers = numbers.filter((x) => x <= 100);
+  // 5로 나눈 나머지 0 추출
+  numbers = numbers.filter((x) => x % 5 === 0);
+
+  console.log(numbers);
+</script>
