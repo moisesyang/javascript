@@ -1,0 +1,18 @@
+<script>
+  String.prototype.contain1 = function (data1) {
+    return this.indexOf(data1)>=0
+    }
+
+  Array.prototype.contain1= function (data1) {
+    return this.indexOf(data1)>=0
+  }
+
+  const c = '안녕하세요'
+  console.log('안녕 in 안녕하세요 :', c.contain1('안녕'))
+  console.log('없는데 in 안녕하세요 :',c.contain1('없는데'))
+
+  const d = [192,311,64,23,678]
+  console.log('23 in [192,311,64,23,678]:',d.contain1(23))
+  console.log('312 in [192,311,64,23,678]':,d.contain1(312))
+</script>
+>
